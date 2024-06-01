@@ -21,7 +21,7 @@ public class Runner {
 
         for (int i=0; i<V ; i++){
             if(!visited[i]){
-                Dfs.dfs(graph, 0, visited);
+                Dfs.dfs(graph, i, visited);
             }
         }
         System.out.println();
