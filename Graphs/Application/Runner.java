@@ -3,6 +3,7 @@ package Graphs.Application;
 import java.util.ArrayList;
 
 import Graphs.BFS.Bfs;
+import Graphs.DFS.Dfs;
 import Graphs.Definition.CreateGraph;
 import Graphs.Models.Edge;
 
@@ -17,9 +18,19 @@ public class Runner {
 
         boolean visited[] = new boolean[V];
 
+        /* FOR BFS */
+
+        // for (int i=0; i<V ; i++){
+        //     if(!visited[i]){
+        //         Bfs.bfs(graph, V, visited, i);
+        //     }
+        // }
+
+        /* FOR DFS */
+
         for (int i=0; i<V ; i++){
             if(!visited[i]){
-                Bfs.bfs(graph, V, visited, i);
+                Dfs.dfs(graph, 0, visited);
             }
         }
         System.out.println();
