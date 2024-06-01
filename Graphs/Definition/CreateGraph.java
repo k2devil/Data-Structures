@@ -49,4 +49,12 @@ public class CreateGraph {
         graph[5].add(new Edge(5, 6));
         graph[6].add(new Edge(6, 5));
     }
+
+    public static void createDirectionalGraph(ArrayList<Edge> graph[]){
+        initializeGraph(graph);
+        graph[0].add(new Edge(0, 2));
+        graph[1].add(new Edge(1, 0));
+        graph[2].add(new Edge(2, 3));
+        graph[3].add(new Edge(3, 0));
+    }
 }
